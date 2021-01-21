@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace API.Entities
 {
@@ -9,6 +10,7 @@ namespace API.Entities
         public string LongDesc { get; set; }
         public int Type { get; set; }
         public decimal Price { get; set; }
-        public DateTime? LastUpdatedDate { get; set; }
+        public DateTime LastUpdatedDate { get; set; }
+        public ICollection<Photo> Photos { get; set; }
     }
 }
